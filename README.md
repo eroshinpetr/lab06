@@ -8,7 +8,7 @@ $ open https://github.com/google/googletest
 
 ## Tasks
 
-- [ ] 1. Создать публичный репозиторий с названием **lab05** на сервисе **GitHub**
+- [ ] 1. Создать публичный репозиторий с названием **lab06** на сервисе **GitHub**
 - [ ] 2. Выполнить инструкцию учебного материала
 - [ ] 3. Ознакомиться со ссылками учебного материала
 - [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -25,12 +25,12 @@ $ cd ${GITHUB_USERNAME}/workspace
 $ pushd .
 $ source scripts/activate
 ```
-Клонирование lab04 в lab05
+Клонирование lab04 в lab06
 ```sh
-$ git clone https://github.com/${GITHUB_USERNAME}/lab04 projects/lab05
-$ cd projects/lab05
+$ git clone https://github.com/${GITHUB_USERNAME}/lab04 projects/lab06
+$ cd projects/lab06
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab06
 ```
 Добавление GoogleTest
 ```sh
@@ -95,7 +95,7 @@ $ cmake --build _build --target test -- ARGS=--verbose
 ```
 Обновление README.md
 ```sh
-$ gsed -i 's/lab04/lab05/g' README.md
+$ gsed -i 's/lab04/lab06/g' README.md
 $ gsed -i 's/\(DCMAKE_INSTALL_PREFIX=_install\)/\1 -DBUILD_TESTS=ON/' .travis.yml
 $ gsed -i '/cmake --build _build --target install/a\
 - cmake --build _build --target test -- ARGS=--verbose
@@ -122,14 +122,14 @@ $ travis enable
 Выводы тестиков:
 ```sh
 Running tests...
-Test project /home/vboxuser/workspace/projects/lab05/_build
+Test project /home/vboxuser/workspace/projects/lab06/_build
     Start 1: check
 1/1 Test #1: check ............................   Passed    0.00 sec
 
 100% tests passed, 0 tests failed out of 1
 ```
 ```sh
-Running main() from /home/vboxuser/workspace/projects/lab05/third-party/gtest/googletest/src/gtest_main.cc
+Running main() from /home/vboxuser/workspace/projects/lab06/third-party/gtest/googletest/src/gtest_main.cc
 [==========] Running 1 test from 1 test case.
 [----------] Global test environment set-up.
 [----------] 1 test from Print

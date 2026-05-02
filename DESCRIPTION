@@ -1,0 +1,4 @@
+Static C++ library for printing text to output streams.
+
+This package contains headers, CMake configuration files and a static library
+that can be used by C++ projects.
